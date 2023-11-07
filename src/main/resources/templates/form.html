@@ -9,10 +9,10 @@
 </head>
 <body>
    <div class="col-sm-6">
-      <form th:action="@{/save}" th:object="${persona}" method="POST">
+      <form th:action="@{/save}" th:object="${producto}" method="POST">
          <div class="card">
             <div class="card-header">
-               <h3>Personas</h3>
+               <h3>Productos</h3>
             </div>
             <div class="card-body">
                <div class="form-group">
@@ -21,11 +21,15 @@
                </div>
                <div class="form-group">
                   <label>Nombre</label>
-                  <input th:field="*{name}" type="text" class="form-control">
+                  <input th:field="*{nombre}" type="text" class="form-control">
                </div>
                <div class="form-group">
-                  <label>Email</label>
-                  <input th:field="*{email}" type="text" class="form-control">
+                  <label>Codigo</label>
+                  <input th:field="*{codigo}" type="text" class="form-control">
+               </div>
+               <div class="form-group">
+                  <label>Precio</label>
+                  <input th:field="*{precio}" type="text" class="form-control">
                </div>
             </div>
             <div class="card-footer">

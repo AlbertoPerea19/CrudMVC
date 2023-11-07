@@ -14,19 +14,21 @@
          <thead>
             <tr>
                <th>ID</th>
-               <th>NOMBRES</th>
-               <th>EMAIL</th>
+               <th>NOMBRE</th>
+               <th>CODIGO</th>
+               <th>PRECIO</th>
                <th>ACCIONES</th>
             </tr>
          </thead>
          <tbody>
-            <tr th:each="persona:${personas}">
-               <td th:text="${persona.id}"> </td>
-               <td th:text="${persona.name}"></td>
-               <td th:text="${persona.email}"></td>
+            <tr th:each="producto:${productos}">
+               <td th:text="${producto.id}"> </td>
+               <td th:text="${producto.nombre}"></td>
+               <td th:text="${producto.codigo}"></td>
+               <td th:text="${producto.precio}"></td>
                <td>
-                  <a th:href="@{/editar/}+${persona.id}" class="btn btn-warning">Editar</a>
-                  <a th:href="@{/eliminar/}+${persona.id}" class="btn btn-danger">Eliminar</a>
+                  <a th:href="@{/editar/}+${producto.id}" class="btn btn-warning">Editar</a>
+                  <a th:href="@{/eliminar/}+${producto.id}" class="btn btn-danger">Eliminar</a>
                </td>
             </tr>
          </tbody>
