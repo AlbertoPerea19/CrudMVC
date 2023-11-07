@@ -58,6 +58,7 @@ La interfaz web te permitirá listar productos, agregar nuevos, editar existente
 
 ## Estructura del Proyecto
 src/main/java/com/example/demo: Contiene las clases Java de la aplicación, incluyendo la entidad Producto, el repositorio, el servicio y el controlador.
+
 src/main/resources/templates: Contiene las plantillas Thymeleaf para las páginas web (form.html e index.html).
 
 ## Contribución
